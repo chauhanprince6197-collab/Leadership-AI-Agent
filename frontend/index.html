@@ -362,6 +362,7 @@ kbd { background: var(--card); border: 1px solid var(--border);
   <div class="sb-section">
     <div class="sb-label">Sample Questions</div>
     <div class="q-list">
+      <button class="q-btn" onclick="sq('What is the Total assets in 2024 ?')">Total assets ?</button>
       <button class="q-btn" onclick="sq('What is our current revenue trend?')">Revenue trend?</button>
       <button class="q-btn" onclick="sq('Which departments are underperforming and why?')">Underperforming departments?</button>
       <button class="q-btn" onclick="sq('What were the key risks highlighted in the last quarter?')">Key risks last quarter?</button>
@@ -398,8 +399,7 @@ kbd { background: var(--card); border: 1px solid var(--border);
         Your internal documents are indexed using <strong>LangChain RecursiveCharacterTextSplitter</strong>,
         stored in <strong>ChromaDB</strong> with <strong>sentence-transformer embeddings</strong>,
         and retrieved via <strong>Hybrid RRF</strong> (dense + BM25) with
-        <strong>MMR diversity re-ranking</strong>. Every answer is grounded in your documents —
-        no hallucination. Use the controls to tune retrieval strategy or let auto-routing decide.
+        <strong>MMR diversity re-ranking</strong>.
       </p>
     </div>
   </div>
@@ -482,8 +482,7 @@ async function ask() {
   const q      = $('#q-input').value.trim();
   const apiKey = $('#api-key').value.trim();
   if (!q) return;
-  if (!apiKey) { alert('Enter your Anthropic API key in the sidebar.'); return; }
-
+  if (!apiKey) { alert('Enter your API key in the sidebar.');return;}
   busy = true;
   $('#send-btn').disabled = true;
   appendUser(q);
