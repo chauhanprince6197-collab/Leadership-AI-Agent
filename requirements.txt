@@ -1,0 +1,52 @@
+# ─────────────────────────────────────────────────────────
+#  AI Leadership Insight Agent — Production Requirements
+# ─────────────────────────────────────────────────────────
+
+# Web framework
+Flask==3.1.0
+gunicorn==23.0.0          # production WSGI server (never use Flask dev server in prod)
+
+# ── RAG stack ─────────────────────────────────────────────
+langchain==0.3.25
+langchain-community==0.3.24
+langchain-text-splitters==0.3.8
+langchain-anthropic==0.3.15   # LangChain ↔ Anthropic wrapper
+
+# ── Embeddings ────────────────────────────────────────────
+sentence-transformers==3.4.1  # all-MiniLM-L6-v2 (local, free, fast)
+# OR use OpenAI / Anthropic embeddings:
+# langchain-openai==0.3.0
+
+# ── Vector DB ─────────────────────────────────────────────
+chromadb==0.6.3               # persistent local vector DB, no infra needed
+# For cloud/scale alternatives:
+# pinecone-client==5.0.0
+# weaviate-client==4.0.0
+
+# ── Hybrid / Sparse retrieval ─────────────────────────────
+rank-bm25==0.2.2              # Okapi BM25
+
+# ── Document loaders ──────────────────────────────────────
+pypdf==5.4.0                  # PDF extraction
+python-docx==1.1.2            # Word document support
+unstructured==0.17.2          # multi-format loader (HTML, PPTX, etc.)
+
+# ── Anthropic SDK ─────────────────────────────────────────
+anthropic>=0.52.0,<1
+
+# ── Utilities ─────────────────────────────────────────────
+pydantic==2.11.3              # data validation & settings
+python-dotenv==1.1.0          # .env file loading
+tenacity==9.1.2               # retry logic with exponential backoff
+structlog==25.1.0             # structured JSON logging
+prometheus-flask-exporter==0.23.1  # /metrics endpoint for monitoring
+
+# ── Security ──────────────────────────────────────────────
+werkzeug==3.1.3               # comes with Flask; pinned for security
+flask-limiter==3.10.1         # rate limiting
+python-magic==0.4.27          # file type validation (not just extension)
+
+# ── Testing ───────────────────────────────────────────────
+pytest==8.3.5
+pytest-cov==6.1.0
+httpx==0.28.1                 # async HTTP client for API tests
