@@ -1,5 +1,6 @@
 # Leadership-AI-Agent
 AI Leadership Insight & Decision Agent
+
 📌 Overview
 This project is an AI-powered assistant designed to help leadership teams make informed decisions by analyzing internal company documents. It answers strategic and operational questions using natural language and lays the foundation for an autonomous decision-making system.
 
