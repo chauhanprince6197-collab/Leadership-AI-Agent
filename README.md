@@ -16,9 +16,13 @@ Build an intelligent agent that:
 
 Task 2 – AI Decision Agent
 Extend the system to:
+
 ->Handle open-ended strategic questions
+
 ->Perform autonomous research across documents
+
 ->Generate actionable recommendations
+
 ->Assist in data-driven decision-making
 
 
