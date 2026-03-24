@@ -61,16 +61,16 @@ Backend Framework (Flask )
 
 📎 How to Run
 # Clone the repository
-git clone <your-repo-link>
+git clone <repo-link>
 
 # Navigate to project folder
-cd project-folder
+cd project-folder (assignment)
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Run the application
-python app.py
+python main.py
 
 
 
