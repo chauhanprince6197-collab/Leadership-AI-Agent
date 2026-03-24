@@ -15,6 +15,7 @@ Build an intelligent agent that:
 
 ->Provides insights on performance, risks, and trends
 
+
 Task 2 – AI Decision Agent
 Extend the system to:
 
@@ -25,6 +26,8 @@ Extend the system to:
 ->Generate actionable recommendations
 
 ->Assist in data-driven decision-making
+
+
 
 
 ⚙️ Features
@@ -40,6 +43,8 @@ Extend the system to:
 📈 Decision support and recommendation
 
 
+
+
 🛠️ Tech Stack
 
 Python
@@ -49,6 +54,7 @@ NLP / LLM (GenAI)
 Vector Database (Chroma DB)
 
 Backend Framework (Flask )
+
 
 
 
@@ -64,6 +70,8 @@ pip install -r requirements.txt
 
 # Run the application
 python app.py
+
+
 
 
 
