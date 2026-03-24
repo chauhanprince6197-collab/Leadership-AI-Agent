@@ -7,8 +7,11 @@ This project is an AI-powered assistant designed to help leadership teams make i
 Task 1 – AI Leadership Insight Agent
 
 Build an intelligent agent that:
+
 ->Understands company documents
+
 ->Answers leadership-level questions
+
 ->Provides insights on performance, risks, and trends
 
 Task 2 – AI Decision Agent
