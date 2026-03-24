@@ -4,6 +4,7 @@ AI Leadership Insight & Decision Agent
 This project is an AI-powered assistant designed to help leadership teams make informed decisions by analyzing internal company documents. It answers strategic and operational questions using natural language and lays the foundation for an autonomous decision-making system.
 
 🎯 Objective
+
 Task 1 – AI Leadership Insight Agent
 
 Build an intelligent agent that:
@@ -27,18 +28,27 @@ Extend the system to:
 
 
 ⚙️ Features
+
 📄 Document ingestion and understanding
+
 🤖 AI-powered question answering
+
 📊 Insight extraction from unstructured data
+
 🔍 Context-aware responses
+
 📈 Decision support and recommendation
 
 
 🛠️ Tech Stack
+
 Python
+
 NLP / LLM (GenAI)
-Vector Database (if used)
-Backend Framework (Flask / FastAPI)
+
+Vector Database (Chroma DB)
+
+Backend Framework (Flask )
 
 
 
