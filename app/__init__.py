@@ -90,6 +90,6 @@ def create_app() -> Flask:
     logger.info("app_created",
                 host=settings.host,
                 port=settings.port,
-                model=settings.anthropic_model,
+                model=settings.openai_model,
                 rate_limit=settings.rate_limit_per_minute)
     return app
